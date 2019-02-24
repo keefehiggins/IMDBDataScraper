@@ -5,7 +5,15 @@
     <Authors>Keefe Higgins</Authors>
     <Company>Keefe Higgins</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
+    <PackageProjectUrl>https://github.com/keefehiggins/IMDBDataScraper</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/keefehiggins/IMDBDataScraper/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/keefehiggins/IMDBDataScraper</RepositoryUrl>
+    <PackageTags>IMDB API, IMDB Scraper, IMDB AutoComplete, Movie API, Mobie DB API,</PackageTags>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Product>IMDB API Data Scraper</Product>
+    <Description>IMDB API Data Scraper allows accessing the IMDB auto complete api, and includes several methods to return IMDB data for categories, most popular movies, most popular tv, newest movies, and several other popular sections of the IMDB site.</Description>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

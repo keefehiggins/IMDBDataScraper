@@ -21,7 +21,15 @@ namespace IMDBTestConcole
                 Console.WriteLine($"{catResult.Title} {catResult.Type} {catResult.Year}");
             }
 
+            var mostPopulalResults = new SpecialItems().GetSpecialItems(IMDBTypes.MostPopularMovies);
 
+            foreach (var popResult in mostPopulalResults)
+            {
+                Console.WriteLine($"{popResult.Actors} {popResult.Id}");
+                Console.WriteLine($"{popResult.ImageID} {popResult.LargeImage}");
+                Console.WriteLine($"{popResult.MediumImage} {popResult.SmallImage}");
+                Console.WriteLine($"{popResult.Title} {popResult.Type} {popResult.Year}");
+            }
 
             Console.ReadKey();
         }

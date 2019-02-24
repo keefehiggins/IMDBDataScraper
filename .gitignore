@@ -8,3 +8,5 @@
 /IMDBDataScraper/obj
 /IMDBDataScraper/bin/Debug
 /.vs
+/IMDBDataScraper/bin/Release
+/IMDBTestConcole/bin/Release
