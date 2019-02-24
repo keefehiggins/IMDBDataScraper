@@ -3,3 +3,8 @@
 ################################################################################
 
 /packages
+/IMDBTestConcole/obj
+/IMDBTestConcole/bin/Debug
+/IMDBDataScraper/obj
+/IMDBDataScraper/bin/Debug
+/.vs
