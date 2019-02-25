@@ -9,7 +9,24 @@ namespace IMDBDataScraper
 {
     public class SpecialItems
     {
+        /// <summary>
+        /// HomePageType is only used when returning IMDBTypes.Newest 
+        /// </summary>
+        /// <param name="SpecialType"></param>
+        /// <param name="homePage"></param>
+        /// <returns></returns>
         public List<IMDBResult> GetSpecialItems(IMDBTypes SpecialType, HomePageType homePage) => GetResultSet(SpecialType, homePage);
+        /// <summary>
+        /// IMDBTypes.ComingSoon Gets movies coming soon
+        /// IMDBTypes.MostPopularMovies Gets most popular movies determined by IMDB users
+        /// IMDBTypes.MostPopularTV Gets most popular TV shows determined by IMDB users
+        /// IMDBTypes.NewDVDReleases Gets the new and recent DVD releases 
+        /// IMDBTypes.Newest Gets the newest movies. Pass in HomePageType to get movies in theaters or movies soon to be released to theaters.
+        /// IMDBTypes.TopRatedMovies Gets the top rated movies of all time
+        /// IMDBTypes.TopRatedTV Gets the top rated TV shows of all time
+        /// </summary>
+        /// <param name="SpecialType"></param>
+        /// <returns></returns>
         public List<IMDBResult> GetSpecialItems(IMDBTypes SpecialType) => GetResultSet(SpecialType);
         
         private static List<IMDBResult> GetResultSet(IMDBTypes SpecialType, HomePageType homePage = HomePageType.MoviesInTheaters)

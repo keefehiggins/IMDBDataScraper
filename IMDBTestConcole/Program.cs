@@ -19,6 +19,10 @@ namespace IMDBTestConcole
                 Console.WriteLine($"{catResult.ImageID} {catResult.LargeImage}");
                 Console.WriteLine($"{catResult.MediumImage} {catResult.SmallImage}");
                 Console.WriteLine($"{catResult.Title} {catResult.Type} {catResult.Year}");
+
+                var movieDetails = new Movie().GetMainMoviePage(catResult.Id);
+
+                Console.WriteLine($"{movieDetails?.review?.reviewBody} {movieDetails?.review?.reviewRating?.ratingValue}");
             }
 
             var mostPopulalResults = new SpecialItems().GetSpecialItems(IMDBTypes.MostPopularMovies);
@@ -29,7 +33,12 @@ namespace IMDBTestConcole
                 Console.WriteLine($"{popResult.ImageID} {popResult.LargeImage}");
                 Console.WriteLine($"{popResult.MediumImage} {popResult.SmallImage}");
                 Console.WriteLine($"{popResult.Title} {popResult.Type} {popResult.Year}");
+
+                var movieDetails = new Movie().GetMainMoviePage(popResult.Id);
+
+                Console.WriteLine($"{movieDetails?.review?.reviewBody} {movieDetails?.review?.reviewRating?.ratingValue}");
             }
+
 
             Console.ReadKey();
         }
